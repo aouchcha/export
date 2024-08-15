@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../styles/home.css">    
+</head>
+<body>
+    <div class="barca">
+    <form action="/ascii-art" method="post">
+            <h3>Enter The Text</h3>
+            <textarea name="ljomla" id="simple" style="width: 100%;" maxlength="250" required></textarea><br>
+            <h3>Choose The Banner</h3>
+            <input type="radio" name="banner" value="standard" id="1" checked>
+            <label class="banner" for="1">Standard</label>
+            <input type="radio" name="banner" value="shadow" id="2">
+            <label class="banner" for="2">Shadow</label>
+            <input type="radio" name="banner" value="thinkertoy" id="3">
+            <label class="banner" for="3">Thinkertoy</label>
+            <br><br>
+            <h3>If you want to download the file choose the format:</h3>
+            <!-- <label for="format" class="format">
+                <select name="format" class="format">
+                    <option class="format" value=".txt">txt</option>
+                    <option class="format" value=".html">html</option>
+                </select>    
+            </label><br> -->
+            <input type="radio" id="html" name="format" value=".html">
+            <label for="html" class="format">Html</label>
+
+            <input type="radio" id="txt" name="format" value=".txt">
+            <label for="txt" class="format">Txt</label>
+            <br><br>
+            <button class="submit" name="check" id="download" type="submit" value="sub">Submit</button>
+            <button class="submit" name="check" id="download" type="submit" value="down">Download</button>
+        </form>
+    </div>
+</body>
+</html>
